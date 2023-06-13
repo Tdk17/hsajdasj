@@ -1,0 +1,278 @@
+
+html, body, #home {
+	height: 100%;
+}
+body {
+	background: url('imagens/FUNDO_SITE.png');
+   
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+  img {
+    border-style: none
+  }
+  
+  ul,
+  ol {
+    overflow: hidden
+  }
+  a:link,
+  a:visited {
+    text-decoration: none
+  }
+  
+  .sp-grid ul,
+  .sp-grid ol {
+    padding-left: 20px;
+    -webkit-padding-start: 20px;
+    list-style-position: outside
+  }
+  
+  
+  
+  
+  
+  #sp-wrapper {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 100%;
+    font-size: 10px
+  }
+  #sp-header {
+      position: relative;
+      font-size: 10px
+    }
+    #sp-header.fixed.sticky {
+      z-index: 1
+    }
+    #sp-logo {
+      cursor: default;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      z-index: 1202;
+      box-sizing: border-box;
+      position: relative
+    }
+    #sp-logo img {
+      max-width: 100%
+    }
+    #sp-logo a {
+      color: inherit;
+      text-decoration: inherit
+    }
+    #sp-footer {
+      position: relative;
+      font-size: 10px
+    }
+    #sp-nav-links {
+      cursor: default;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      width: 100%
+    }
+    #sp-nav-links>ul {
+      overflow: visible;
+      list-style: none;
+      pointer-events: auto;
+      white-space: nowrap
+    }
+    #sp-nav-links>ul>li {
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      white-space: nowrap;
+      margin: 0px 2px
+    }
+    #sp-nav-links>ul>li>a:link,
+  #sp-nav-links>ul>li>a:visited {
+    text-decoration: none;
+    display: inline-block
+  }
+  #sp-nav-links>ul>li>ul {
+      position: absolute;
+      list-style: none;
+      display: none;
+      line-height: 2em;
+      text-shadow: none;
+      background: #222;
+      z-index: 550;
+      margin: 0;
+      padding: 0;
+      overflow: visible;
+      font-style: normal;
+      font-weight: normal;
+      color: #FFF;
+      width: auto;
+      right: 0px;
+      top: 100%;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2)
+    }
+    #sp-nav-links>ul>li:hover>ul {
+      animation: grow .2s ease-out;
+      -webkit-animation: grow .2s ease-out;
+      display: block
+    }
+    #sp-nav-button {
+      width: 30px;
+      height: 26px;
+      box-sizing: border-box;
+      border-top: 3px solid;
+      position: relative;
+      margin: 20px;
+      color: #FFF;
+      cursor: pointer;
+      display: none;
+      z-index: 1
+    }
+    #sp-bar {
+      pointer-events: none
+    }
+    #sp-bar-social a,
+  #sp-bar-text>span {
+    pointer-events: all
+  }
+    
+  .bg_video{
+      position: fixed; 
+      right: 0; 
+      bottom: 0;
+      min-width: 50%; 
+      min-height: 50%;
+      width: auto; 
+      height: auto; 
+      z-index: -1000;
+      background: url(imagens/VIDEO.mp4) no-repeat;
+      background-size: cover; 
+  }
+  body, html{
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica;
+    font-size:30px;
+    line-height:1.8;
+    
+  }
+  .wrap {
+    /*Ajuste a largura e altura desejadas aqui*/
+    width: 1500px;
+    height: 500px;
+
+    /*isto fará o elemento video e o .container se adaptarem ao .wrap*/
+    position: relative;
+}
+
+.wrap > .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /*apenas um -1 é necessário quando se trabalha com relative + absolute, sendo pai e filho*/
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* evita do video passar a altura desejada do .wrap */
+}
+.wrap > .bg-video > video {
+    width: 100%;
+}
+.container2{
+   
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 150px ;
+    
+}
+.container{
+  
+    
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+  
+    
+}
+#sp-header {
+    position: relative;
+    font-size: 10px
+  }
+  #sp-header.fixed.sticky {
+    z-index: 1
+  }
+
+/* Barra de navegação
+-----------------------------*/
+nav.navbar-transparente {
+	padding: 15px 0px;
+	background: rgba(0,0,0,0.6);
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #9bf0e1;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,0.5);
+}
+#sp-nav {
+    padding: 0px;
+    box-sizing: border-box;
+    order: 2;
+    color: transparent;
+    background-color: transparent;
+    width: 100%;
+    text-align: center
+}
+
+#sp-nav-links a {
+    font-family: "Montserrat", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    letter-spacing: 0.01em
+}
+
+#sp-nav-links>ul>li>a:link,
+#sp-nav-links>ul>li>a:visited {
+    color: transparent;
+    padding: 10px 25px
+}
+
+#sp-nav-links>ul>li.selected>a:link,
+#sp-nav-links>ul>li.selected>a:visited {
+    color: transparent
+}
+
+#sp-nav-links>ul>li:first-of-type>a {
+    border: none
+}
+
+#sp-nav-links>ul>li>a:hover {
+    color: transparent
+}
+
+#sp-nav-button {
+    color: transparent;
+    order: 1;
+    box-shadow: 0 0 0 10px transparent, inset 0 0 0 100px transparent
+}
+
+#sp-nav-links>ul>li>ul>li>a:hover {
+    color: #FFF;
+    background: transparent
+}
